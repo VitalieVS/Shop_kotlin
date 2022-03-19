@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="order"
+            type="com.example.shop_kotlin.login.model.Order" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/r1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingRight="15dp">
+
+            <ImageView
+                android:id="@+id/i1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@{order.imageUrl}" />
+
+            <TextView
+                android:id="@+id/tt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/i1"
+                android:fontFamily="sans-serif-black"
+                android:letterSpacing="0.03"
+                android:text="@{`Order id ` + order.id}"
+                android:textSize="25sp"
+                android:textColor="#516b9e"
+                tools:text="Order id 1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tt1"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/i1"
+                android:text="@{order.orderDate.toInstant().toString()}"
+                android:textColor="#516b9e"
+                android:textSize="16sp"
+                tools:text="2022-03-06" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:text="@{`-` + order.totalPrice + `mdl`}"
+                android:textSize="23sp"
+                android:textColor="#516b9e"
+                tools:text="-$14,99"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</layout>

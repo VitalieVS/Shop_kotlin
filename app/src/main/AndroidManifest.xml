@@ -2,18 +2,36 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.shop_kotlin">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
+        android:fullBackupContent="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Shop_kotlin">
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.shop_kotlin.ProductActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.shop_kotlin.PromotionItemActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.paypal.pyplcheckout.home.view.activities.PYPLInitiateCheckoutActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.paypal.openid.RedirectUriReceiverActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.shop_kotlin.MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.Shop_kotlin.NoActionBar">
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

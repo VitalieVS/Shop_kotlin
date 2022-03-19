@@ -1,12 +1,46 @@
 <resources>
-    <string name="app_name">Shop_kotlin</string>
-    <string name="action_settings">Settings</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="app_name">Shop_Kotlin</string>
+    <string name="our_best_promotions">Our best promotions!</string>
+    <string name="promotion_item">Promotion item</string>
+    <string name="stars">stars</string>
+    <string name="only_fresh_products">Only fresh products</string>
+    <string name="image">image</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="we_use_the_most_marvelous_and_fresh_ingredients">We use the most marvelous and fresh ingredients!</string>
+    <string name="close_icon">Close icon</string>
+    <string name="decrease_quantity_icon">Decrease quantity icon</string>
+    <string name="increase_quantity">Increase quantity</string>
+    <string name="back_icon">Back Icon</string>
+    <string name="error_occured">Error occurred!</string>
+    <string name="no_internet_connection_or_unknown_error_occured">No internet connection or unknown error occurred!</string>
+    <string name="no_internet_image">No internet image</string>
+    <string name="search">Search</string>
+    <string name="arrow_for_item">Arrow for item</string>
+    <string name="image_for_promotion">Image for Promotion</string>
+    <string name="stars_for_promotion">Stars for promotion</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="looks_like_you_haven_t_added_anything_to_your_cart_yet">Looks like you haven\'t added anything to your cart yet</string>
+    <string name="your_cart_is_empty">Your Cart is Empty</string>
+    <string name="promotional_item">This item is Promotional</string>
+    <string name="remember_me">Remember me</string>
+    <string name="authenticate">Authenticate</string>
+    <string name="not_registered_yet">Not registered yet?</string>
+    <string name="register_now">Register now</string>
+    <string name="password">Password</string>
+    <string name="your_orders">Your orders</string>
+    <string name="looks_like_you_have_no_orders_yet">Looks like you have no orders yet!</string>
+    <string name="order_items">Order items</string>
+    <string name="arrow_back">Arrow back</string>
+    <string name="my_delicious_cart">My Delicious Cart</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="reset_password">Reset password</string>
+    <string name="successfully_registered">Successfully registered!</string>
+    <string name="thank_you_that_you_re_with_us_now_you_can_proceed_to_order_from_our_delicious_shop">Thank you that you\'re with us, now you can proceed to order from our delicious shop</string>
+    <string name="new_password">New password</string>
+    <string name="confirm_new_password">Confirm new password</string>
+    <string name="your_current_password">Your current password</string>
+    <string name="edit_current_address">Edit current address</string>
+    <string name="thank_you_for_your_purchase">Thank you for your purchase!</string>
+    <string name="your_order_will_be_delivered_soon">Your order will be delivered soon!</string>
+    <string name="button_for">Button for</string>
 </resources>

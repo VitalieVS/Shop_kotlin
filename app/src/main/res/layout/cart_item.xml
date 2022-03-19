@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="product"
+            type="com.example.shop_kotlin.models.Product" />
+
+        <variable
+            name="cartService"
+            type="com.example.shop_kotlin.cart.service.CartService" />
+
+        <variable
+            name="removeInterface"
+            type="com.example.shop_kotlin.cart.implementation.binder.remover.RemoveProduct" />
+    </data>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="80dp"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/productImage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@{product.imageURL}"
+                    android:contentDescription="@string/image" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/productTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@{product.title}"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                        tools:text="Test text" />
+
+                    <TextView
+                        android:id="@+id/isVegetarian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="35dp"
+                        android:fontFamily="@font/regular"
+                        android:text="@{product.isVegetarian()}"
+                        android:textColor="@color/blueViolet"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:text="Vegetarian Food" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/increaseAndDecrease"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:shadowRadius="20"
+                    app:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/decreaseQuantity"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginEnd="5dp"
+                            android:contentDescription="@string/decrease_quantity_icon"
+                            android:onClick="@{() -> (product.quantity == 1) ? removeInterface.removeProductFromCart(product) : cartService.decreaseProductQuantity(product) }"
+                            android:textColor="@color/colorBlack"
+                            app:srcCompat="@{(product.quantity == 1) ? @drawable/ic_group_402 : @drawable/ic_group_400}" />
+
+                        <TextView
+                            android:id="@+id/productQuantity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@{String.valueOf(product.quantity)}"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            tools:text="8" />
+
+                        <ImageView
+                            android:id="@+id/increaseQuantity"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="5dp"
+                            android:contentDescription="@string/increase_quantity"
+                            android:onClick="@{() -> cartService.increaseProductQuantity(product)}"
+                            android:textColor="@color/colorBlack"
+                            app:srcCompat="@drawable/ic_group_401" />
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="15dp"
+                        android:text="@{product.itemPrice1 + ` mdl`}"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        tools:ignore="RelativeOverlap,SmallSp"
+                        tools:text="25 MDL" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</layout>

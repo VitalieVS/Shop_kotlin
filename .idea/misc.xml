@@ -3,8 +3,39 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.23425925925925925" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.19630192502532928" />
+        <entry key="app/src/main/res/layout/activity_product.xml" value="0.2563405797101449" />
+        <entry key="app/src/main/res/layout/activity_promotion_item.xml" value="0.2563405797101449" />
+        <entry key="app/src/main/res/layout/bottom_sheet_forgot_password.xml" value="0.2563405797101449" />
+        <entry key="app/src/main/res/layout/bottom_sheet_item.xml" value="0.2563405797101449" />
+        <entry key="app/src/main/res/layout/bottom_sheet_order.xml" value="0.2563405797101449" />
+        <entry key="app/src/main/res/layout/cart_empty.xml" value="0.2563405797101449" />
+        <entry key="app/src/main/res/layout/cart_item.xml" value="0.2563405797101449" />
+        <entry key="app/src/main/res/layout/cart_promotion_item.xml" value="0.2563405797101449" />
+        <entry key="app/src/main/res/layout/category_item.xml" value="0.2563405797101449" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.19630192502532928" />
+        <entry key="app/src/main/res/layout/custom_tab.xml" value="0.2563405797101449" />
+        <entry key="app/src/main/res/layout/first_register_general.xml" value="0.2563405797101449" />
+        <entry key="app/src/main/res/layout/fragment_cart.xml" value="0.2563405797101449" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.12771739130434784" />
+        <entry key="app/src/main/res/layout/fragment_logged_address.xml" value="0.2563405797101449" />
+        <entry key="app/src/main/res/layout/fragment_logged_reset_password.xml" value="0.2563405797101449" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.2563405797101449" />
+        <entry key="app/src/main/res/layout/fragment_search.xml" value="0.2563405797101449" />
+        <entry key="app/src/main/res/layout/fragment_step_register.xml" value="0.2563405797101449" />
+        <entry key="app/src/main/res/layout/fragment_success.xml" value="0.2563405797101449" />
+        <entry key="app/src/main/res/layout/fragment_user_menu.xml" value="0.2563405797101449" />
+        <entry key="app/src/main/res/layout/ingredient_item.xml" value="0.2563405797101449" />
+        <entry key="app/src/main/res/layout/no_internet.xml" value="0.19630192502532928" />
+        <entry key="app/src/main/res/layout/order_item.xml" value="0.2563405797101449" />
+        <entry key="app/src/main/res/layout/product_item.xml" value="0.2563405797101449" />
+        <entry key="app/src/main/res/layout/promotion_item.xml" value="0.19630192502532928" />
+        <entry key="app/src/main/res/layout/registration_success.xml" value="0.2563405797101449" />
+        <entry key="app/src/main/res/layout/second_register_address.xml" value="0.2563405797101449" />
+        <entry key="app/src/main/res/layout/third_register_security.xml" value="0.2563405797101449" />
+        <entry key="app/src/main/res/menu/menu_main.xml" value="0.2611111111111111" />
+        <entry key="app/src/main/res/menu/menu_navigation.xml" value="0.2611111111111111" />
       </map>
     </option>
   </component>

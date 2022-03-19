@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F7F8"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/categoriesSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/search_bg"
+        android:drawableEnd="@drawable/ic_baseline_search_24"
+        android:ems="15"
+        android:hint="@string/search"
+        android:inputType="textNoSuggestions"
+        android:textColor="@color/colorBlack"
+        android:padding="16dp"
+        android:paddingStart="16dp"
+        android:textAlignment="viewStart"
+        android:textColorHint="@color/colorBlack"
+        android:textStyle="bold" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="25dp"
+        android:id="@+id/categoryListRecyclerView"
+        android:layout_width="match_parent"
+        android:padding="4dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintHorizontal_bias="2"
+        app:spanCount="2" />
+
+
+</LinearLayout>

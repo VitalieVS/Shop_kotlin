@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="address"
+            type="com.example.shop_kotlin.login.model.Address" />
+
+        <variable
+            name="userService"
+            type="com.example.shop_kotlin.login.service.UserService" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F6F7F8"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_keyboard_arrow_left_24" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="In order to change your address edit and then press edit address."
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack" />
+
+                <EditText
+                    android:id="@+id/firstAddressContainer"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:afterTextChanged="@{(edtitable)->address.afterFirstAddressChanged(edtitable)}"
+                    android:backgroundTint="@android:color/black"
+                    android:gravity="center"
+                    android:hint="Stefan cel mare 187"
+                    android:inputType="text"
+                    android:text="@{address.firstAddress}"
+                    android:textColor="#292929"
+                    android:textColorHint="#797979" />
+
+
+                <EditText
+                    android:id="@+id/secondAddressContainer"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:afterTextChanged="@{(edtitable)->address.afterSecondAddressChanged(edtitable)}"
+                    android:backgroundTint="@android:color/black"
+                    android:gravity="center"
+                    android:hint="Apt 4, frst block."
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:text="@{address.secondAddress}"
+                    android:textColor="#292929"
+                    android:textColorHint="#797979" />
+
+                <EditText
+                    android:id="@+id/countryContainer"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:afterTextChanged="@{(edtitable)->address.afterCountryChanged(edtitable)}"
+                    android:backgroundTint="@android:color/black"
+                    android:gravity="center"
+                    android:hint="Country"
+                    android:inputType="textEmailAddress"
+                    android:padding="15dp"
+                    android:text="@{address.country}"
+                    android:textColor="#292929"
+                    android:textColorHint="#797979" />
+
+                <EditText
+                    android:id="@+id/emailContainer"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:afterTextChanged="@{(edtitable)->address.afterCityChanged(edtitable)}"
+                    android:backgroundTint="@android:color/black"
+                    android:gravity="center"
+                    android:hint="City"
+                    android:inputType="textEmailAddress"
+                    android:padding="15dp"
+                    android:text="@{address.city}"
+                    android:textColor="#292929"
+                    android:textColorHint="#797979" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/colorWhite"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:elevation="20dp"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:backgroundTint="#F6F7F8"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:backgroundTint="@color/blueViolet"
+                            android:elevation="20dp"
+                            android:onClick="@{() -> userService.changeAddress(address)}"
+                            android:src="@drawable/ic_baseline_refresh_24"
+                            android:tint="@android:color/white"
+                            app:elevation="10dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/edit_current_address"
+                            android:textColor="#191919"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</layout>
