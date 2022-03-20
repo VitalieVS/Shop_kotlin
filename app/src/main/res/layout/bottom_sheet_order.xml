@@ -7,15 +7,15 @@
 
         <variable
             name="cartService"
-            type="com.example.shop_kotlin.cart.service.CartService" />
+            type="com.example.shopkotlin.cart.service.CartService" />
 
         <variable
             name="paymentService"
-            type="com.example.shop_kotlin.payment.service.PaymentService" />
+            type="com.example.shopkotlin.payment.service.PaymentService" />
 
         <variable
             name="orderRequest"
-            type="com.example.shop_kotlin.order.request.OrderRequest" />
+            type="com.example.shopkotlin.order.request.OrderRequest" />
 
     </data>
 

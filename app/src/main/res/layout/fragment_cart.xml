@@ -6,7 +6,7 @@
 
         <variable
             name="cartService"
-            type="com.example.shop_kotlin.cart.service.CartService" />
+            type="com.example.shopkotlin.cart.service.CartService" />
     </data>
 
 

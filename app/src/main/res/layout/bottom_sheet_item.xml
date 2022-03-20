@@ -8,11 +8,11 @@
 
         <variable
             name="product"
-            type="com.example.shop_kotlin.models.Product" />
+            type="com.example.shopkotlin.models.Product" />
 
         <variable
             name="cartService"
-            type="com.example.shop_kotlin.cart.service.CartService" />
+            type="com.example.shopkotlin.cart.service.CartService" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -51,7 +51,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="10dp"
-            android:fontFamily="@font/regular"
+            android:fontFamily="@font/nexa"
             android:text="@{product.isVegetarian()}"
             android:textColor="@color/colorBlack"
             android:textSize="15sp"
@@ -64,7 +64,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:fontFamily="@font/semibold"
+            android:fontFamily="@font/nexa"
             android:text="@{product.title}"
             android:textColor="@color/colorBlack"
             android:textSize="24sp"
@@ -77,7 +77,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
-            android:fontFamily="@font/semibold"
+            android:fontFamily="@font/nexa"
             android:text="@{String.valueOf(product.weight) + `g`}"
             android:textColor="@color/colorBlack"
             android:textSize="24sp"
@@ -129,7 +129,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="4dp"
-            android:fontFamily="@font/semibold"
+            android:fontFamily="@font/nexa"
             android:text="@{String.valueOf(product.quantity)}"
             android:textColor="@color/colorBlack"
             android:textSize="24sp"
@@ -156,7 +156,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
-            android:fontFamily="@font/semibold"
+            android:fontFamily="@font/nexa"
             android:text="@{String.valueOf(product.itemPrice1) + ` mdl`}"
             android:textColor="@color/colorBlack"
             android:textSize="24sp"

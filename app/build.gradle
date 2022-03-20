@@ -1,6 +1,5 @@
 plugins {
     id 'com.android.application'
-
     id 'kotlin-android'
     id 'kotlin-kapt'
 
@@ -8,9 +7,19 @@ plugins {
 
 android {
     compileSdk 32
+    buildToolsVersion "30.0.03"
+    ndkVersion '23.1.7779620'
+
+     dataBinding {
+        enabled = true
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
 
     defaultConfig {
-        applicationId "com.example.shop_kotlin"
+        applicationId "com.example.shopkotlin"
         minSdk 30
         targetSdk 32
         versionCode 1
@@ -23,9 +32,7 @@ android {
         dataBinding true
     }
 
-    dataBinding {
-        enabled = true
-    }
+
 
     buildTypes {
         release {
@@ -37,9 +44,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    kotlinOptions {
-        jvmTarget = '1.8'
-    }
+
     buildFeatures {
         viewBinding true
     }
@@ -71,7 +76,7 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
     implementation 'com.makeramen:roundedimageview:2.3.0'
     implementation 'com.squareup.retrofit2:converter-scalars:2.9.0'
-    implementation 'com.paypal.checkout:android-sdk:0.6.0'
+    implementation 'com.paypal.checkout:android-sdk:0.6.1'
     implementation "androidx.core:core-ktx:1.7.0"
 
     implementation 'androidx.recyclerview:recyclerview:1.2.1'

@@ -5,11 +5,11 @@
     <data>
         <variable
             name="product"
-            type="com.example.shop_kotlin.models.Product" />
+            type="com.example.shopkotlin.models.Product" />
 
         <variable
             name="cartService"
-            type="com.example.shop_kotlin.cart.service.CartService" />
+            type="com.example.shopkotlin.cart.service.CartService" />
     </data>
 
     <LinearLayout

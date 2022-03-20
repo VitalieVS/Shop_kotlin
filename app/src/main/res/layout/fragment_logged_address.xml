@@ -6,11 +6,11 @@
 
         <variable
             name="address"
-            type="com.example.shop_kotlin.login.model.Address" />
+            type="com.example.shopkotlin.login.model.Address" />
 
         <variable
             name="userService"
-            type="com.example.shop_kotlin.login.service.UserService" />
+            type="com.example.shopkotlin.login.service.UserService" />
     </data>
 
     <LinearLayout

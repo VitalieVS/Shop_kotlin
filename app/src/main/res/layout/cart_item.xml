@@ -7,15 +7,15 @@
 
         <variable
             name="product"
-            type="com.example.shop_kotlin.models.Product" />
+            type="com.example.shopkotlin.models.Product" />
 
         <variable
             name="cartService"
-            type="com.example.shop_kotlin.cart.service.CartService" />
+            type="com.example.shopkotlin.cart.service.CartService" />
 
         <variable
             name="removeInterface"
-            type="com.example.shop_kotlin.cart.implementation.binder.remover.RemoveProduct" />
+            type="com.example.shopkotlin.cart.implementation.binder.remover.RemoveProduct" />
     </data>
 
 
@@ -67,7 +67,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="35dp"
-                        android:fontFamily="@font/regular"
+                        android:fontFamily="@font/nexa"
                         android:text="@{product.isVegetarian()}"
                         android:textColor="@color/blueViolet"
                         android:textSize="15sp"

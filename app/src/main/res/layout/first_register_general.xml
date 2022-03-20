@@ -8,11 +8,11 @@
 
         <variable
             name="registerRequest"
-            type="com.example.shop_kotlin.register.model.RegisterRequest" />
+            type="com.example.shopkotlin.register.model.RegisterRequest" />
 
         <variable
             name="registerService"
-            type="com.example.shop_kotlin.register.service.RegisterService" />
+            type="com.example.shopkotlin.register.service.RegisterService" />
     </data>
 
     <RelativeLayout

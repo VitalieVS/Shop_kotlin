@@ -8,11 +8,11 @@
 
         <variable
             name="promotionModel"
-            type="com.example.shop_kotlin.promotion.model.Promotion" />
+            type="com.example.shopkotlin.promotion.model.Promotion" />
 
         <variable
             name="cartService"
-            type="com.example.shop_kotlin.cart.service.CartService" />
+            type="com.example.shopkotlin.cart.service.CartService" />
     </data>
 
 

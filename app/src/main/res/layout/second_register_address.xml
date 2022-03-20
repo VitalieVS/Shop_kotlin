@@ -8,11 +8,11 @@
 
         <variable
             name="address"
-            type="com.example.shop_kotlin.login.model.Address" />
+            type="com.example.shopkotlin.login.model.Address" />
 
         <variable
             name="registerService"
-            type="com.example.shop_kotlin.register.service.RegisterService" />
+            type="com.example.shopkotlin.register.service.RegisterService" />
     </data>
 
     <RelativeLayout

@@ -8,15 +8,15 @@
 
         <variable
             name="loginViewModel"
-            type="com.example.shop_kotlin.login.viewmodel.LoginViewModel" />
+            type="com.example.shopkotlin.login.viewmodel.LoginViewModel" />
 
         <variable
             name="loginRequest"
-            type="com.example.shop_kotlin.login.model.LoginRequest" />
+            type="com.example.shopkotlin.login.model.LoginRequest" />
 
         <variable
             name="userService"
-            type="com.example.shop_kotlin.login.service.UserService" />
+            type="com.example.shopkotlin.login.service.UserService" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

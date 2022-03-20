@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.shop_kotlin">
+    package="com.example.shopkotlin">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -13,13 +13,13 @@
         android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+        android:theme="@style/AppTheme">
 
         <activity
-            android:name="com.example.shop_kotlin.ProductActivity"
+            android:name="com.example.shopkotlin.ProductActivity"
             android:exported="true" />
         <activity
-            android:name="com.example.shop_kotlin.PromotionItemActivity"
+            android:name="com.example.shopkotlin.PromotionItemActivity"
             android:exported="true" />
         <activity
             android:name="com.paypal.pyplcheckout.home.view.activities.PYPLInitiateCheckoutActivity"
@@ -28,7 +28,7 @@
             android:name="com.paypal.openid.RedirectUriReceiverActivity"
             android:exported="true" />
         <activity
-            android:name="com.example.shop_kotlin.MainActivity"
+            android:name="com.example.shopkotlin.MainActivity"
             android:exported="true"
             android:hardwareAccelerated="true"
             android:launchMode="singleTask">

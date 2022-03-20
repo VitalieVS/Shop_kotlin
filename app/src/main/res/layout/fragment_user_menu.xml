@@ -10,15 +10,15 @@
 
         <variable
             name="loginViewModel"
-            type="com.example.shop_kotlin.login.viewmodel.LoginViewModel" />
+            type="com.example.shopkotlin.login.viewmodel.LoginViewModel" />
 
         <variable
             name="user"
-            type="com.example.shop_kotlin.login.model.User" />
+            type="com.example.shopkotlin.login.model.User" />
 
         <variable
             name="userService"
-            type="com.example.shop_kotlin.login.service.UserService" />
+            type="com.example.shopkotlin.login.service.UserService" />
     </data>
 
     <LinearLayout
@@ -193,7 +193,7 @@
                 android:id="@+id/userOrders"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:visibility="@{user.orders.size() > 0 ? View.VISIBLE : View.GONE}" />
+                android:visibility="@{user.ordersList.size() > 0 ? View.VISIBLE : View.GONE}" />
 
             <ImageView
                 android:id="@+id/errorImage"
@@ -202,7 +202,7 @@
                 android:layout_centerHorizontal="true"
                 android:contentDescription="@string/no_internet_image"
                 android:src="@drawable/empty_cart"
-                android:visibility="@{user.orders.size() > 0 ? View.GONE : View.VISIBLE}" />
+                android:visibility="@{user.ordersList.size() > 0 ? View.GONE : View.VISIBLE}" />
 
             <TextView
                 android:id="@+id/description"
@@ -215,7 +215,7 @@
                 android:textAlignment="center"
                 android:textColor="@color/colorBlack"
                 android:textSize="20sp"
-                android:visibility="@{user.orders.size() > 0 ? View.GONE : View.VISIBLE}" />
+                android:visibility="@{user.ordersList.size() > 0 ? View.GONE : View.VISIBLE}" />
 
         </RelativeLayout>
 

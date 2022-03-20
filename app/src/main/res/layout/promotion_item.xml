@@ -7,7 +7,7 @@
 
         <variable
             name="viewModel"
-            type="com.example.shop_kotlin.promotion.model.Promotion" />
+            type="com.example.shopkotlin.promotion.model.Promotion" />
     </data>
 
 

@@ -6,7 +6,7 @@
 
         <variable
             name="order"
-            type="com.example.shop_kotlin.login.model.Order" />
+            type="com.example.shopkotlin.login.model.Order" />
 
     </data>
 
