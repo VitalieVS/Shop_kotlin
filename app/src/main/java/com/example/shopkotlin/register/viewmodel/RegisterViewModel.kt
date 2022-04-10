@@ -11,7 +11,7 @@ import retrofit2.Response
 class RegisterViewModel : ViewModel() {
     fun register(registerRequest: RegisterRequest?) {
 
-        RegisterClient.instance?.register(registerRequest)
+        RegisterClient.INSTANCE.register(registerRequest)
             ?.enqueue(object : Callback<Boolean?> {
                 override fun onResponse(
                     call: Call<Boolean?>,

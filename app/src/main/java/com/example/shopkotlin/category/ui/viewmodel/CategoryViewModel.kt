@@ -12,7 +12,7 @@ import java.util.*
 class CategoryViewModel : ViewModel() {
     val categories: Unit
         get() {
-            CategoryClient.instance?.categories?.enqueue(object : Callback<List<Category>?> {
+            CategoryClient.INSTANCE.categories?.enqueue(object : Callback<List<Category>?> {
                 override fun onResponse(
                     call: Call<List<Category>?>,
                     response: Response<List<Category>?>

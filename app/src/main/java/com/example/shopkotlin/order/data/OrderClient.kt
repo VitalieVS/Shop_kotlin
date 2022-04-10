@@ -15,14 +15,7 @@ class OrderClient {
     companion object {
         private const val BASE_URL =
             "http://10.0.2.2:4546" // This URL is used by emulator to work with API
-        private var INSTANCE: OrderClient? = null
-        val instance: OrderClient?
-            get() {
-                if (null == INSTANCE) {
-                    INSTANCE = OrderClient()
-                }
-                return INSTANCE
-            }
+        val INSTANCE: OrderClient = OrderClient()
     }
 
     init {

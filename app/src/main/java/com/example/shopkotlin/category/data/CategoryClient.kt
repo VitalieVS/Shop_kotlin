@@ -13,14 +13,7 @@ class CategoryClient {
     companion object {
         private const val BASE_URL =
             "http://10.0.2.2:4546" // This URL is used by emulator to work with API
-        private var INSTANCE: CategoryClient? = null
-        val instance: CategoryClient?
-            get() {
-                if (null == INSTANCE) {
-                    INSTANCE = CategoryClient()
-                }
-                return INSTANCE
-            }
+        var INSTANCE: CategoryClient = CategoryClient()
     }
 
     init {

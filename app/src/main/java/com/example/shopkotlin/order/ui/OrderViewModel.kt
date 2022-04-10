@@ -11,7 +11,7 @@ import retrofit2.Response
 
 class OrderViewModel : ViewModel() {
     fun createOrder(token: String?, orderRequest: OrderRequest?) {
-        OrderClient.instance?.createOrder(token, orderRequest)
+        OrderClient.INSTANCE.createOrder(token, orderRequest)
             ?.enqueue(object : Callback<OrderResponse?> {
                 override fun onResponse(
                     call: Call<OrderResponse?>,

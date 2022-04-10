@@ -11,16 +11,9 @@ class PromotionsClient {
         get() = promotionInterface.promotions
 
     companion object {
-        private const val BASE_URL =
+         const val BASE_URL =
             "http://10.0.2.2:4546" // This IP address is used only on EMULATOR
-        private var INSTANCE: PromotionsClient? = null
-        val instance: PromotionsClient?
-            get() {
-                if (null == INSTANCE) {
-                    INSTANCE = PromotionsClient()
-                }
-                return INSTANCE
-            }
+            val INSTANCE: PromotionsClient = PromotionsClient()
     }
 
     init {

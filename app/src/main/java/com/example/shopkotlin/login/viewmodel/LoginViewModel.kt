@@ -12,7 +12,7 @@ import retrofit2.Response
 
 class LoginViewModel : ViewModel() {
     fun authenticate(loginRequest: LoginRequest?) {
-        LoginClient.instance?.login(loginRequest)
+        LoginClient.INSTANCE.login(loginRequest)
             ?.enqueue(object : Callback<LoginResponse?> {
                 override fun onResponse(
                     call: Call<LoginResponse?>,
@@ -39,7 +39,7 @@ class LoginViewModel : ViewModel() {
     }
 
     fun getUser(token: String?, user: String?) {
-        LoginClient.instance?.getUser(user, token)
+        LoginClient.INSTANCE.getUser(user, token)
             ?.enqueue(object : Callback<User?> {
                 override fun onResponse(
                     call: Call<User?>,
@@ -47,9 +47,6 @@ class LoginViewModel : ViewModel() {
                 ) {
                     if (response.body() != null) {
 
-
-                        println("MIAUNEL")
-                        println(response.body()!!.ordersList!!.size)
                         USER_MUTABLE_LIVE_DATA.value = response.body()
                         LOGIN_STATUS.setValue(AuthorisationStatus.SUCCESS)
                     } else {

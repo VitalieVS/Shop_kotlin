@@ -20,14 +20,7 @@ class LoginClient {
     companion object {
         private const val BASE_URL =
             "http://10.0.2.2:4546" // This IP address is used only on EMULATOR
-        private var INSTANCE: LoginClient? = null
-        val instance: LoginClient?
-            get() {
-                if (null == INSTANCE) {
-                    INSTANCE = LoginClient()
-                }
-                return INSTANCE
-            }
+        var INSTANCE: LoginClient = LoginClient()
     }
 
     init {

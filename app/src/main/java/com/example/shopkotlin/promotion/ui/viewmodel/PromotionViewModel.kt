@@ -12,7 +12,8 @@ import retrofit2.Response
 class PromotionViewModel : ViewModel() {
     val promotions: Unit
         get() {
-            PromotionsClient.instance?.promotions
+
+            PromotionsClient.INSTANCE?.promotions
                 ?.enqueue(object : Callback<List<Promotion?>?> {
                     override fun onResponse(
                         call: Call<List<Promotion?>?>,

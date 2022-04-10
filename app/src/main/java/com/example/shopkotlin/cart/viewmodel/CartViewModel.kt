@@ -16,7 +16,7 @@ class CartViewModel : ViewModel() {
     }
 
     fun setStateMutableLiveData(value: State) {
-        stateMutableLiveData.setValue(value)
+        stateMutableLiveData.value = value
     }
 
     companion object {
